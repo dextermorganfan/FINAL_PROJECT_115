@@ -1,0 +1,44 @@
+html, body{
+    background-image: url(Images/Background.png);
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    height: auto;
+    width: 25%;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+.header {
+    background-color: transparent;
+    width: auto;
+}
+.header button{
+    margin-right: 12%;
+    margin-top: 5%;
+    display: inline;
+    float: right;
+    padding: none;
+    background-color: transparent;
+}
+.header img{
+    width: 100%;
+    height: auto;
+}
+.login{
+float: right;
+width: fit-content;
+height: fit-content;
+}
+.login img{
+    width: 25%;
+    height: auto;
+}
+
