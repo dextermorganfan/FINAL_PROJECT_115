@@ -86,3 +86,36 @@ function checkIfAlreadyInDatabase(username,password,buttonClicked) {
       console.log("No need to check, the database is empty!")
    }
 }
+
+password_input.addEventListener("focusout", function() {
+   let lengthOfPassword = password_input.value.length
+   if (lengthOfPassword <= 0) {
+      return
+   }
+   let protectedString = ""
+   for (let i = 0; i < lengthOfPassword ;i++) {
+      protectedString += "*"
+   }
+   lastPassword = password_input.value
+   password_input.value = protectedString
+})
+
+password_input.addEventListener("focus", function() {
+   password_input.value = ""
+})
+
+signupButton.onclick = function() {
+   if (checkLengthOfInputs()) {
+
+      checkIfAlreadyInDatabase(username_input.value,lastPassword,"signUp")
+
+   } 
+}
+
+loginButton.onclick = function() {
+   if (checkLengthOfInputs()) {
+
+      checkIfAlreadyInDatabase(username_input.value, lastPassword, "logIn")
+
+   }
+}
