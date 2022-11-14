@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+
 * {
    margin: 0;
    padding: 0;
@@ -9,7 +10,7 @@
 .signup {
    width: 100%;
    min-height: 1080px;
-   background-image: url(Images/Background.png);
+   background-image: url(images/Background.png);
 }
 
 .logo {
@@ -129,4 +130,16 @@
 .password {
    position: relative;
    display: flex;
+}
+
+.checkmark {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  bottom: 4.7in;
+  left: 18.6in;
+}
+
+.checkmark img {
+   width: 50px;
 }
