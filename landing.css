@@ -1,0 +1,73 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+.landing {
+   width: 100%;
+   min-height: 1080px;
+   background: url(LandingImages/Background.png);
+}
+
+.logo {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   left: 70px;
+   top: 50px;
+}
+
+.hero-1 {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   left: 70px;
+   top: 125px;
+}
+
+.signUp {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   top: 160px;
+   left: 70px;
+   transition: .35s;
+}
+
+.logIn {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   left: 70px;
+   top: 170px;
+   transition: .35s;
+}
+
+.signUp:hover, .logIn:hover{
+   cursor: pointer;
+   transform: scale(1.05,1.05);
+}
+
+.copyright {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   top: 435px;
+   left: 60px;
+}
+
+.socials {
+   width: fit-content;
+   display: flex;
+   position: relative;
+   left: 83%;
+   top: 380px;
+}
+
+.trust {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   left: 84%;
+   top: 170px;
+}
