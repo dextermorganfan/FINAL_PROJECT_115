@@ -70,9 +70,13 @@ function checkIfAlreadyInDatabase(username,password,buttonClicked) {
          }
 
       } else {
+
          if (username.toLowerCase() == Database[userData].Username.toLowerCase()) {
             if (password == Database[userData].Password) {
                alert("You have sucessfully logged into your account.")
+               resetInputfields()
+            } else {
+               alert("The password given didn't match our records with the associated username. Try again.")
                resetInputfields()
             }
          } else {
