@@ -1,1 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Inter';
+}
+
+.signup {
+   width: 100%;
+   min-height: 1080px;
+   background-image: url(images/Background.png);
+}
+
+.logo {
+   width: fit-content;
+   position: absolute;
+   display: flex;
+   left: .51in;
+   top: .35in;
+}
+
+.hero-1 {
+   width: fit-content;
+   position: absolute;
+   display: flex;
+   top: 5.8in;
+   left: .7in;
+}
+
+.terms { 
+   width: fit-content;
+   position: absolute;
+   display: flex;
+   top: 10.5in;
+   left: .4in;
+}
+
+.signupForm {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   left: 13.94in;
+   top: 1.5in
+}
+
+.signupForm div {
+   width: fit-content;
+   position: relative;
+   bottom: .65in;
+   left: 32%;
+}
+
+.signupButton {
+   width: fit-content;
+   position: relative;
+   left: 15.2in;
+   bottom: 3in;
+}
+
+.signupButton img {
+   width: 75%;
+   transition: .35s;
+}
+
+.signupButton img:hover {
+   cursor: pointer;
+   transform: scale(1.1,1.1);
+}
+
+.loginButton {
+   width: fit-content;
+   position: relative;
+   left: 15.2in;
+   bottom: 2.9in;
+}
+
+.loginButton img {
+   width: 75%;
+   transition: .35s;
+}
+
+.loginButton img:hover {
+   cursor: pointer;
+   transform: scale(1.1,1.1);
+}
+
+.password {
+   z-index: 1;
+   width: fit-content;
+   position: absolute;
+   display: flex;
+   left: 14.5in;
+   top: 4.8in;
+}
+
+.password input {
+   width: 4.4in;
+   height: .7in;
+   background-color: rgb(255, 255, 255);
+   outline: none;
+   border: transparent;
+   background: transparent;
+   font-size: 35px;
+   font-weight: bolder;
+}
+
+.username {
+   z-index: 1;
+   width: fit-content;
+   position: absolute;
+   display: flex;
+   left: 14.5in;
+   top: 3.23in;
+}
+
+.username input {
+   width: 4.4in;
+   height: .7in;
+   background-color: rgb(255, 255, 255);
+   outline: none;
+   border: transparent;
+   background: transparent;
+   font-size: 35px;
+   font-weight: bolder;
+}
+
+.password {
+   position: relative;
+   display: flex;
+}
