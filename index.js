@@ -12,7 +12,6 @@ let minimumPasswordLength = 7
 
 // 1. Check if the input lengths are valid
 
-
 // Sign Up
 
 // Check if they are already in the database
@@ -76,9 +75,17 @@ function checkIfAlreadyInDatabase(username,password,buttonClicked) {
                alert("You have sucessfully logged into your account.")
                resetInputfields()
             }
+         } else {
+            alert(`The username you provided '${username}', wasn't found in our database. Try signing up instead.`)
+            resetInputfields()
          }
       }
 
+   }
+
+   if (Database.length <= 0 && buttonClicked == "logIn") {
+      alert(`The username you provided '${username}', wasn't found in our database. Try signing up instead.`)
+      resetInputfields()
    }
 
    if (Database.length <= 0 && buttonClicked == "signUp") { 
