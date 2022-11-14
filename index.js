@@ -4,6 +4,8 @@ let loginButton = document.getElementsByClassName("loginButton")[0]
 let username_input = document.getElementsByClassName("user")[0]
 let password_input = document.getElementsByClassName("pass")[0]
 
+let password_check = document.getElementsByClassName("password_check")[0]
+
 let Database = []
 
 let lastPassword
@@ -26,6 +28,7 @@ let minimumPasswordLength = 7
 function resetInputfields() {
    username_input.value = ""
    password_input.value = ""
+   password_check.src = "Images/remove.png"
 }
 
 function checkLengthOfInputs() {
@@ -33,7 +36,6 @@ function checkLengthOfInputs() {
 
       if (username_input.value.length <= 0) {
          alert("Your username is too short.")
-         resetInputfields()
       } else {
          alert("Your password is too short.")
          resetInputfields()
@@ -98,6 +100,13 @@ function checkIfAlreadyInDatabase(username,password,buttonClicked) {
       console.log("No need to check, the database is empty!")
    }
 }
+password_input.addEventListener("input", function() {
+   if (password_input.value.length < minimumPasswordLength || password_input.value.length <= 0) {
+      password_check.src = 'Images/remove.png'
+   } else {
+      password_check.src = "Images/tick-mark.png"
+   }
+})
 
 password_input.addEventListener("focusout", function() {
    let lengthOfPassword = password_input.value.length
@@ -114,6 +123,7 @@ password_input.addEventListener("focusout", function() {
 
 password_input.addEventListener("focus", function() {
    password_input.value = ""
+   password_check.src = "Images/remove.png"
 })
 
 signupButton.onclick = function() {
