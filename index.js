@@ -32,7 +32,7 @@ function checkLengthOfInputs() {
    if (password_input.value.length <= minimumPasswordLength || username_input.value.length <= 0) {
 
       if (username_input.value.length <= 0) {
-         alert("Your username is too short.")\
+         alert("Your username is too short.")
          resetInputfields()
       } else {
          alert("Your password is too short.")
