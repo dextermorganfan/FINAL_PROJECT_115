@@ -8,7 +8,7 @@ let password_check = document.getElementsByClassName("password_check")[0]
 
 let audio = document.getElementById("audio")
 
-audio.volume = .3
+audio.volume = .15
 let Database = []
 
 let lastPassword
