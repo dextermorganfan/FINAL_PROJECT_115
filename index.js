@@ -6,6 +6,9 @@ let password_input = document.getElementsByClassName("pass")[0]
 
 let password_check = document.getElementsByClassName("password_check")[0]
 
+let audio = document.getElementById("audio")
+
+audio.volume = .3
 let Database = []
 
 let lastPassword
@@ -78,6 +81,8 @@ function checkIfAlreadyInDatabase(username,password,buttonClicked) {
             if (password == Database[userData].Password) {
                alert("You have sucessfully logged into your account.")
                resetInputfields()
+               window.location.href = 'actual.html'
+               localStorage.setItem('username', username)
             } else {
                alert("The password given didn't match our records with the associated username. Try again.")
                resetInputfields()

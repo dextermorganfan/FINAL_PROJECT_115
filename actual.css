@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   font-family: "Inter";
+   color: white;
+}
+
+.actual {
+   width: 100%;
+   min-height: 1080px;
+   background-image: url(ActualImages/Background.png);
+}
+
+.search {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   left: 5.5%;
+   top: 1.5vh;
+}
+
+.pfp {
+   width: fit-content;
+   position: absolute;
+   display: flex;
+   left: 77vw;
+   top: 1vh;
+}
+
+.username {
+   width: fit-content;
+   position: absolute;
+   display: flex;
+   left: 82vw;
+   top: 3vh;
+}
+
+.username p {
+   font-size: 25px;
+}
+
+.signout {
+   width: fit-content;
+   position: relative;
+   display: flex;
+   left: 82vw;
+}
+
+.signout:hover {
+   cursor: pointer;
+}
+
+.content {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   top: 10vh;
+}
